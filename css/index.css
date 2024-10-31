@@ -1,0 +1,358 @@
+:root{
+    --primarycolor:#0078FF;
+    --secondcoloer:#CDE1F8;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    height: 100vh;
+    background-image:/* linear-gradient ( rgba(0,0,0,.5), rgba(0,0,0,.7) ) */url(../imges/home.png.jpeg) ;
+    background-attachment:fixed;
+    width:100%;
+    background-size: cover;  
+    position: relative;
+}
+.navbar {
+    background-color: #020202;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+}
+.navbar-toggler {
+    position: relative;
+    background-color: #ffff;
+}
+.overlay-home{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color : rgba(0, 0, 0 ,.8);
+}
+.nav-item a{
+    transition: .4s;
+}
+.nav-item{
+    padding: 15px;
+}
+.nav-item .active{
+    border-bottom: 1px solid #fff;
+}
+.nav-item .nav-link:hover{
+border-bottom: 1px solid #fff;
+}
+.hero-tittle h1 {
+    font-size: 4.5rem;
+    bottom: -70px;
+    position: relative;
+    text-align: center;
+}
+.animate{
+    position: relative;
+    bottom: -70px;
+text-align: center;
+font-size: 3rem;
+}
+.animate::after{content: '';
+animation:  typing 6s infinite alternate;
+}
+@keyframes typing {
+    2.5% {
+      content: " D|";
+    }
+    5% {
+      content: " De|";
+    }
+    7.5% {
+      content: " Des|";
+    }
+    10% {
+      content: " Desi|";
+    }
+    12.5% {
+      content: " Desig|";
+    }
+    15% {
+      content: " Designe|";
+    }
+    17.5% {
+      content: " Designer|";
+    }
+    20% {
+      content: " Designe|";
+    }
+    22.5% {
+      content: " Design|";
+    }
+    25% {
+      content: " Desig|";
+
+    }
+    27.5% {
+      content: " Desi|";
+
+    }
+    30% {
+      content: " Des|";
+    }
+    32.5% {
+      content: " De|";
+    }
+    35% {
+      content: " Dev|";
+    }
+    37.5% {
+      content: " Deve|";
+    }
+    40% {
+      content: " Devel|";
+    }
+    42.5% {
+      content: " Develo|";
+    }
+    45% {
+      content: " Develop|";
+    }
+    47.5% {
+      content: " Developer|";
+    }
+    50% {
+      content: " Develope|";
+    }
+    52.5% {
+      content: " Develop|";
+    }
+    55% {
+      content: " Develo|";
+    }
+    57.5% {
+      content: " Deve|";
+    }
+    60% {
+      content: " f|";
+    }
+    62.5% {
+      content: " fr|";
+    }
+    65% {
+      content: " fre|";
+    }
+    67.5% {
+      content: " free|";
+    }
+    70% {
+      content: " freela|";
+    }
+    72.5% {
+      content: " freelan|";
+    }
+    75% {
+      content: " freelanc|";
+    }
+    77.5% {
+      content: " freelancer|";
+    }
+    80% {
+      content: " freelance";
+    }
+    82.5% {
+      content: " freelanc";
+    }
+    85% {
+      content: " freela|";
+    }
+    87.5% {
+      content: "  fre|";
+    }
+    90% {
+      content: " f|";
+    }
+    92.5% {
+      content: " ph|";
+    }
+    95% {
+      content: " phot|";
+    }
+    97.5% {
+      content: " photogr|";
+    }
+    100% {
+      content: " photogrophe|";
+    }
+  }
+/* main heading*/
+.main-heading{
+    text-align: center;
+
+
+}
+.main-heading p{
+    position: relative;
+    margin-bottom: 10px;
+}
+.main-heading p::after{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    border:3px solid var(--primarycolor);
+    top: 30px;
+    right: 48%;
+}
+/*  services */
+.circle{
+    transition: 1s;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--primarycolor);
+    border-radius: 50%;
+margin-bottom: 10px;
+}
+.circle:hover{
+    background-color: var(--primarycolor);
+    border-color:#CDE1F8;
+    
+}
+/*    //////////////
+*/
+.counter{
+    position: relative;
+    background-image: url(../imges/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.overlay-srv{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    padding: 0;
+    opacity: .7;
+    width: 100%;
+    background-color:var(--primarycolor);
+
+
+}
+.srv-circle{
+    left: 50%;
+    transform: translatex(-50%
+
+    );
+    position: relative;
+    height: 70px ;
+    width: 70px;
+    border-radius: 50%;
+    border: 10px solid var(--secondcoloer);
+}
+/*    ////////////*/
+.Portfolio .row>*{
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+
+}
+.porfolio-item .work-box{
+    transition: 1s;
+}
+.porfolio-item:hover .work-box{
+scale: 1.1;
+width: 100%;
+
+}
+.testimonial{
+    position: relative;
+    min-height: 50vh;
+    background-image: url(../imges/overlay-bg.jpg);
+background-size: cover;
+background-attachment: fixed;
+width: 100%;
+}
+.overlay-test{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    padding: 0;
+    opacity: .7;
+    width: 100%;
+    background-color:var(--primarycolor);
+
+    
+}
+.carousel-indicators [data-bs-target]{
+    height: 10px ;
+    width: 10px ; 
+    border-radius: 50%;
+
+}
+/*//////////////*/
+.card-body{
+    border: 1px solid #7777;
+}
+.card-catogary h5{
+position: absolute;
+left: 40%;
+transform: translatey(-50%);
+}
+.card-footer img{
+width: 40px;
+
+}
+.card-footer{
+    border-top: 1px solid #7777;
+}
+footer{
+    position: relative;
+background-image: url(../imges/overlay-bg.jpg);
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.overlay-footer{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    padding: 0;
+    opacity: .7;
+    width: 100%;
+    background-color:var(--primarycolor);
+
+}
+/*///////////**/
+.contact-mainheading h2{
+    position: relative;
+    
+}
+.contact-mainheading h2::after {
+content: '';
+position: absolute;
+border: 2px solid var(--primarycolor);
+height: 3px;
+width: 80px;
+top: 30px;
+left:0;
+margin-top: 10px;
+}
+.icons{
+    width: 50px ;
+    height: 50px;
+    border:5px solid var(--primarycolor);
+    border-radius: 50%;
+}
